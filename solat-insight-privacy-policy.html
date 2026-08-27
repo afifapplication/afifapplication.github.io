@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Solat Insight</title>
+<style>
+  :root {
+    --brand-primary: #065F46;
+    --brand-primary-light: #0D9467;
+    --brand-cream: #FAF7ED;
+    --text-dark: #1A2E27;
+    --text-muted: #5B6B65;
+    --border-color: #E4E0D3;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--brand-cream);
+    color: var(--text-dark);
+    line-height: 1.65;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, #04432F 100%);
+    color: var(--brand-cream);
+    padding: 56px 20px 64px;
+    text-align: center;
+  }
+
+  .hero .icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 18px;
+    background: rgba(250, 247, 237, 0.12);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+  }
+
+  .hero h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero .app-name {
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  .hero .meta {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 6px;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: -32px auto 60px;
+    padding: 0 20px;
+  }
+
+  .tldr {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--brand-primary);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 24px rgba(6, 95, 70, 0.08);
+  }
+
+  .tldr .label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brand-primary);
+    margin-bottom: 6px;
+  }
+
+  .tldr p {
+    margin: 0;
+    font-size: 15.5px;
+    color: var(--text-dark);
+  }
+
+  .card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(6, 95, 70, 0.04);
+  }
+
+  .card h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin: 0 0 14px;
+    color: var(--brand-primary);
+  }
+
+  .card h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: rgba(6, 95, 70, 0.1);
+    color: var(--brand-primary);
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .card p {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: var(--text-dark);
+  }
+
+  .card p:last-child { margin-bottom: 0; }
+
+  .card ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+  }
+
+  .card ul:last-child { margin-bottom: 0; }
+
+  .card li {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .card li:last-child { margin-bottom: 0; }
+
+  .card li strong { color: var(--text-dark); }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-top: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  th {
+    background: rgba(6, 95, 70, 0.06);
+    color: var(--brand-primary);
+    font-weight: 700;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: rgba(6, 95, 70, 0.1);
+    color: var(--brand-primary);
+  }
+
+  .contact-card {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, #04432F 100%);
+    color: var(--brand-cream);
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .contact-card h2 {
+    color: #FFFFFF;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .contact-card p {
+    color: rgba(250, 247, 237, 0.85);
+    margin-bottom: 16px;
+  }
+
+  .contact-card a.email-btn {
+    display: inline-block;
+    background: var(--brand-cream);
+    color: var(--brand-primary);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 15px;
+    transition: transform 0.15s ease;
+  }
+
+  .contact-card a.email-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 20px 50px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  footer a {
+    color: var(--brand-primary);
+    text-decoration: none;
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 23px; }
+    .card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="icon">🕌</div>
+    <h1><span class="app-name">Solat Insight</span> Privacy Policy</h1>
+    <div class="meta">Developed by MASoftware &nbsp;•&nbsp; Effective Date: August 27, 2026</div>
+  </div>
+
+  <div class="container">
+
+    <div class="tldr">
+      <span class="label">TL;DR</span>
+      <p>🔒 Your prayer records, settings, and history stay on your device. We use your location only to show accurate prayer times, and we never sell or share your data with advertisers.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">1</span> Overview</h2>
+      <p>This Privacy Policy explains what information <strong>Solat Insight</strong> ("the app") accesses, how it is used, and what stays on your device. Solat Insight is developed and maintained by MASoftware.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">2</span> Location Data</h2>
+      <p>The app may request access to your device's location to:</p>
+      <ul>
+        <li>Determine your nearest official JAKIM prayer zone (for users in Malaysia), or</li>
+        <li>Calculate prayer times directly from your coordinates (for users outside Malaysia)</li>
+      </ul>
+      <p>Your location is processed <strong>only on your device</strong> to work out prayer times. It is never stored on our servers, logged, or shared with any third party. Location access is entirely optional — you can deny it and select your prayer zone manually instead at any time from within the app.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">3</span> Prayer Time Data</h2>
+      <p>To show accurate, up-to-date prayer schedules, the app sends your selected zone code to a prayer time provider (JAKIM e-Solat data, accessed via api.waktusolat.app). Only the zone code is sent — no personal information, device identifiers, or precise location is included in this request.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">4</span> Data Stored On Your Device</h2>
+      <p>The following information is saved locally on your device only, in a private on-device database:</p>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Data</th><th>Purpose</th></tr>
+          <tr><td>Prayer tracking records</td><td>Marked as done, missed, or excused</td></tr>
+          <tr><td>Qada (missed prayer) records</td><td>Track and log make-up prayers</td></tr>
+          <tr><td>Selected prayer zone / location mode</td><td>Show your correct prayer times</td></tr>
+          <tr><td>Language &amp; theme preference</td><td>Personalize the app's appearance</td></tr>
+          <tr><td>Cached prayer schedules</td><td>Allow the app to work offline</td></tr>
+        </table>
+      </div>
+      <p style="margin-top:14px;">This data is never transmitted to us or to any third party. It stays on your device and is permanently deleted if you uninstall the app or clear its app data.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">5</span> Third-Party Services</h2>
+      <p>The app relies on the following external services to function:</p>
+      <ul>
+        <li><strong>JAKIM e-Solat / api.waktusolat.app</strong> — provides official Malaysian prayer time data</li>
+        <li><strong>Device location &amp; geocoding services</strong> — provided by your phone's operating system, used to detect your location and, where relevant, a readable place name</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">6</span> What We Don't Do</h2>
+      <ul>
+        <li><span class="badge">No accounts</span> We do not require sign-up, and we do not collect your name, email, or phone number</li>
+        <li><span class="badge">No ads</span> We do not show advertisements or use ad networks</li>
+        <li><span class="badge">No analytics/tracking</span> We do not use analytics SDKs, behavioral tracking, or device fingerprinting</li>
+        <li><span class="badge">No data sale</span> We do not sell, rent, or share your data with any third party</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">7</span> Children's Privacy</h2>
+      <p>Solat Insight is suitable for general audiences and is not specifically directed at children. We do not knowingly collect personal information from children. Since the app does not collect personal identifiers from any user, no such data is knowingly collected from children either.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">8</span> Your Choices</h2>
+      <ul>
+        <li>You may deny or revoke location permission at any time via your device settings</li>
+        <li>You may select your prayer zone manually instead of using automatic location</li>
+        <li>You may delete all locally stored data by uninstalling the app or clearing its app data</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="num">9</span> Policy Updates</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised effective date. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
+    </div>
+
+  </div>
+
+  <div class="container" style="margin-top: -4px;">
+    <div class="card contact-card">
+      <h2 style="justify-content:center;"><span class="num" style="background:rgba(255,255,255,0.15); color:#fff;">✉</span> Questions?</h2>
+      <p>Have a question about this Privacy Policy or how Solat Insight handles your data?</p>
+      <a class="email-btn" href="mailto:contact.masoftware@gmail.com">contact.masoftware@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 MASoftware. All rights reserved.
+  </footer>
+
+</body>
+</html>
