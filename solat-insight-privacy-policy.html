@@ -32,15 +32,18 @@
   }
 
   .hero .icon {
-    width: 72px;
-    height: 72px;
+    width: 84px;
+    height: 84px;
     margin: 0 auto 18px;
-    background: rgba(250, 247, 237, 0.12);
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 34px;
+  }
+
+  .hero .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .hero h1 {
@@ -244,7 +247,7 @@
 <body>
 
   <div class="hero">
-    <div class="icon">🕌</div>
+    <div class="icon"><img src="assets/img/solatinsight_logo.png" alt="Solat Insight logo"></div>
     <h1><span class="app-name">Solat Insight</span> Privacy Policy</h1>
     <div class="meta">Developed by MASoftware &nbsp;•&nbsp; Effective Date: August 27, 2026</div>
   </div>
